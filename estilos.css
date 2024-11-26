@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* ESTILO INICIAL DE TODA LA PÁGINA */
+* {
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO DE BODY */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTILO CABECERA */
+header {
+    background-color: #fd0a54;
+    width: 100%;
+    padding: 3% 0;
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+}
+
+/* ESTILO DE BLOQUE PRINCIPAL */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 7%;
+    background-color: #fcffd9;
+    width: 100%;
+    
+}
+
+/* ESTILO DEL PIE DE PÁGINA */
+footer {
+    padding: 2%;
+    background-color: #e7a1aa;
+    display: block;
+}
+
+/* ESTILO DEL MENÚ */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    background-color: #f57576;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+}
