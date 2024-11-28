@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap');
 
 * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Helvetica, sans-serif;
+    /* scroll-behavior: smooth; */
 }
 
 h1,
@@ -47,12 +49,20 @@ main {
 
 main h3,
 h5 {
-    padding: 2% 0;
+    padding: 15px 0;
+    filter: opacity(0.5);
+}
+
+main div div {
+    width: auto;
+    margin: 15px;
 }
 
 main div div img {
     max-width: 120px;
+    width: auto;
     max-height: 120px;
+    height: auto;
 }
 
 main div {
@@ -61,35 +71,76 @@ main div {
     justify-content: center;
 }
 
+section {
+    align-self: center;
+    display: flex;
+    width: 60%;
+    height: 30vh;
+    margin: 3%;
+}
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: 0.5s ease;
+}
+
+section img:hover {
+    cursor: grabbing;
+    width: 30%;
+    opacity: 1;
+    filter: contrast(130%);
+
+}
+
 /* ESTILO DE FOOTER */
 footer {
     padding: 3%;
     background-color: #ED6A5A;
+    font-size: x-small;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F4F1BB;
+    text-shadow: 3px 3px 5px red;
+}
+
+footer a:hover {
+    cursor: crosshair;
+    text-shadow: 0 5px 3px purple;
 }
 
 /* ESTILO DE NAVEGACIÓN */
 nav {
     background-color: #9BC1BC;
-}
-
-nav .menu {
-    list-style: none;
-    justify-content: space-around;
     display: flex;
-}
-
-nav .menu li {
-    display: flex;
+    padding: 0.5%;
     align-items: center;
-    width: 200px;
-    padding: 1.5%;
-    border-radius: 10px;
+    justify-content: space-around;
+    position: sticky;
+    top: 0px;
 }
 
-nav .menu li:hover {
-    background-color: #36C9C6;
+nav div {
+    width: auto;
 }
 
-.menu img {
-    width: 8%;
+nav img {
+    width: 3%;
+}
+
+nav div div {
+    display: none;
+}
+
+nav div:hover div {
+    display: block;
+    display: flex;
+    float: inherit;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
