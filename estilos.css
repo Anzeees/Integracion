@@ -65,6 +65,10 @@ main div div img {
     height: auto;
 }
 
+main div div img:hover {
+    cursor: zoom-in;
+}
+
 main div {
     display: flex;
     width: 100%;
@@ -99,12 +103,11 @@ section img:hover {
     width: 30%;
     opacity: 1;
     filter: contrast(130%);
-
 }
 
 /* ESTILO DE FOOTER */
 footer {
-    padding: 3%;
+    padding: 2%;
     background-color: #ED6A5A;
     font-size: x-small;
     text-align: center;
@@ -156,7 +159,7 @@ nav {
     background-color: #9BC1BC;
     width: 100%;
     justify-content: space-around;
-    padding-top: 20px;
+    padding: 15px;
     position: sticky;
     top: 0px;
     z-index: 2;
@@ -192,7 +195,7 @@ nav li {
 
 .desplegable {
     width: 10%;
-    padding-bottom: 1%;
+    padding: 1%;
     position: relative;
 }
 
@@ -205,12 +208,12 @@ nav li {
 .boton-menu {
     display: inline-block;
     background-color: #9BC1BC;
-    border: none;
     color: #FFFFFF;
+    border: none;
     text-align: center;
     font-size: 24px;
-    padding: 0px;
-    width: 105px;
+    padding: 1%;
+    width: 140px;
     cursor: pointer;
     margin: 5px;
     position: relative;
@@ -220,6 +223,8 @@ nav li {
 .boton-menu:hover:after {
     opacity: 1;
     right: 0px;
+    background-color: rgb(143, 246, 255);
+    color: #0b7dda;
 }
 
 .submenu {
@@ -231,7 +236,7 @@ nav li {
     position: absolute;
     top: 35px;
     left: 0px;
-    width: 150px;
+    width: 155px;
     height: 70vh;
     overflow-y: scroll;
 }
