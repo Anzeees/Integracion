@@ -151,6 +151,35 @@ footer a:hover {
     opacity: 1;
 }
 
+@media (max-width: 600px) {
+    .tooltip-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .tooltip-text {
+        visibility: hidden;
+        width: 60%;
+        background-color: #c228fa;
+        color: #000000;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 200%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    
+    .tooltip-container:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+        filter: contrast(1.2);
+    }
+}
 
 /* ESTILO DE NAVEGACIÓN */
 
